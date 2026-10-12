@@ -1,0 +1,25 @@
+# CMake and Ninja build products
+/build/
+/cmake-build-*/
+/CMakeCache.txt
+/CMakeFiles/
+/compile_commands.json
+
+# Generated firmware and temporary release artefacts.
+# The accepted ATTENSION 1.0 release UF2 at repository root is tracked.
+/*.bin
+/*.elf
+/*.hex
+/*.map
+/*.uf2
+!/ATTENSION_1.0.uf2
+*.jlink
+
+# Editor, OS, and transient files
+/.vscode/
+/.idea/
+*.swp
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

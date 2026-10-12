@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <style>
+    .panel,.fine,.knob,.bay,.led { fill:#fff; stroke:#111; stroke-width:4; stroke-linejoin:round; stroke-linecap:round }
+    .fine { stroke-width:2.5; fill:none }
+    .label { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:700; font-size:30.8px }
+    .small { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:600; font-size:21px }
+    .micro { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:600; font-size:16.8px }
+    .title { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:800; letter-spacing:8px; font-size:58.24px }
+    .knobname { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:800; font-size:33.802272px; letter-spacing:.5px }
+    .ledmark { fill:#fff; stroke:#148a43; stroke-width:4; stroke-linejoin:round; stroke-linecap:round }
+    .voice { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:600; font-size:16.5px }
+    .ledlabel { font-family:Arial,Helvetica,sans-serif; fill:#148a43; text-anchor:middle; font-weight:600; font-size:16.8px }
+    .ledname { font-family:Arial,Helvetica,sans-serif; fill:#148a43; text-anchor:middle; font-weight:600; font-size:19.6px; letter-spacing:.3px }
+    .atmos { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:500; font-size:21px }
+    .secondary { font-family:Arial,Helvetica,sans-serif; fill:#1557A0; text-anchor:middle; font-weight:700; font-size:23.8px; letter-spacing:.4px }
+    .secondarybox { fill:#fff; stroke:#1557A0; stroke-width:3.5; rx:7; ry:7 }
+    .secondaryglyph { fill:none; stroke:#1557A0; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round }
+    .arrowline { fill:none; stroke:#111; stroke-width:2.15; stroke-linejoin:round; stroke-linecap:round; marker-end:url(#arrowhead) }
+    .branchline { fill:none; stroke:#111; stroke-width:2.15; stroke-linejoin:round; stroke-linecap:round }
+    .baydivider { fill:none; stroke:#111; stroke-width:4; stroke-linecap:butt }
+    .tech { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:600; font-size:15.4px }
+    .techlabel { font-family:Arial,Helvetica,sans-serif; fill:#111; text-anchor:middle; font-weight:600; font-size:18.2px }
+  </style>
+  <defs><marker id="arrowhead" markerWidth="5.25" markerHeight="5.25" refX="4.6" refY="2.625" orient="auto"><path d="M0,0 L5.25,2.625 L0,5.25 Z" fill="#111"/></marker></defs>
+  <!-- Original functional schematic; geometry retained from the first-draft panel. -->
+  <path class="panel" d="M115 65H1460L1555 160V930L1460 1025H115L30 940V160Z"/>
+  <text x="800" y="235" class="title">ATTENSION</text><text x="800" y="264" class="small" style="font-weight:400;font-size:17.92px">for Bastl Instruments Kastle 2</text>
+
+  <!-- top edge I/O: two sync and two audio markers -->
+  <text x="475" y="92" class="label" font-size="16">SYNC</text><path class="fine" d="M365 112h34l-17 30zM550 142h34l-17-30z"/>
+  <text x="1152" y="92" class="label" font-size="16">AUDIO</text><path class="fine" d="M1040 112h34l-17 30zM1230 142h34l-17-30zM1197 137v-9a14 14 0 0 1 28 0v9M1197 137h7v-13h-7zM1218 137h7v-13h-7z"/>
+
+  <!-- Functional modulation routes, simplified from the faceplate's patch-to-control paths. -->
+  <path class="branchline" d="M480 522H405"/>
+  <path class="branchline" d="M480 562H405"/>
+  <path class="arrowline" d="M405 562V190.75H280"/>
+  <path class="arrowline" d="M480 695H365V505H280"/>
+  <path class="arrowline" d="M480 730H345V860H280"/>
+  <path class="arrowline" d="M865 667H925V445H878"/>
+
+  <!-- Actual LED markers: simplified angular forms at the three graphic locations. -->
+  <g class="ledmark"><path d="M440 238L458 218L470 180L482 218L500 238M448 228H462L470 238L478 228H492M470 180V168"/></g><text x="470" y="266" class="ledname">WORLD</text><text x="470" y="283" class="ledlabel">LED 1</text>
+  <g class="ledmark"><path d="M1100 235l18-32 18 20 18-28 24 40-58 12z"/></g><text x="1140" y="266" class="ledname">JOURNEY</text><text x="1140" y="283" class="ledlabel">LED 2</text>
+  <g class="ledmark"><path d="M1205 842l16-35 12 20 10-10 12 25zM1221 807l6-12 7 12z"/></g><text x="1230" y="868" class="ledname">STATUS</text><text x="1230" y="885" class="ledlabel">LED 3</text>
+
+  <!-- knobs, with pointers -->
+  <g><circle class="knob" cx="200" cy="220" r="61"/><path class="panel" d="M200 183v35"/><text x="200" y="337" class="knobname">ATMOSPHERE</text>
+    <text x="122.3" y="286" class="atmos">Fracture</text><text x="98" y="225.7" class="atmos">Distort</text><text x="128.2" y="166.8" class="atmos">Echo</text><text x="200" y="136" class="atmos">Flange</text><text x="275.8" y="166.8" class="atmos">Reverb</text><text x="304" y="225.7" class="atmos">Whistle</text><text x="271.7" y="286" class="atmos">Glide</text>
+  </g>
+  <g><circle class="knob" cx="200" cy="520" r="61"/><path class="panel" d="M200 483v35"/><text x="200" y="630" class="knobname">PRESENCE</text><rect class="secondarybox" x="120" y="640" width="160" height="40"/><text x="200" y="660" dominant-baseline="middle" class="secondary">LOW PITCH</text></g>
+  <g><circle class="knob" cx="200" cy="845" r="61"/><path class="panel" d="M200 808v35"/><text x="200" y="955" class="knobname">TENSION</text><rect class="secondarybox" x="138" y="965" width="124" height="40"/><text x="200" y="985" dominant-baseline="middle" class="secondary">RHYTHM</text></g>
+  <g><circle class="knob" cx="800" cy="470" r="61"/><path class="panel" d="M800 433v35"/><text x="800" y="570" class="knobname">WANDER</text><rect class="secondarybox" x="726" y="580" width="148" height="40"/><text x="800" y="600" dominant-baseline="middle" class="secondary">CONTOUR</text>
+    <path d="M725 539V529L734.5 521L744 529V539H725" fill="none" stroke="#8A6414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g><circle class="knob" cx="1400" cy="220" r="61"/><path class="panel" d="M1400 183v35"/><text x="1400" y="337" class="knobname">VOICE A</text>
+    <text x="1345.2" y="296" class="atmos">OFF</text><text x="1305.8" y="260" class="atmos">Mellow</text><text x="1301" y="217" class="atmos">Keys</text><text x="1314.4" y="174.4" class="atmos">Pipes</text><text x="1350.9" y="145.7" class="atmos">Retro</text><text x="1400" y="127" class="atmos">Pluck</text><text x="1449.1" y="145.7" class="atmos">Drift</text><text x="1485.6" y="174.4" class="atmos">Bass</text><text x="1499" y="217" class="atmos">Reed</text><text x="1492.2" y="260" class="atmos">Chime</text><text x="1459.8" y="296" class="atmos">Hollow</text>
+  </g>
+  <g><circle class="knob" cx="1400" cy="520" r="61"/><path class="panel" d="M1400 483v35"/><text x="1400" y="637" class="knobname">VOICE B</text><rect class="secondarybox" x="1314" y="647" width="172" height="40"/><text x="1400" y="667" dominant-baseline="middle" class="secondary">HIGH PITCH</text>
+    <text x="1345.2" y="596" class="atmos">OFF</text><text x="1305.8" y="560" class="atmos">Mellow</text><text x="1301" y="517" class="atmos">Keys</text><text x="1314.4" y="474.4" class="atmos">Pipes</text><text x="1350.9" y="445.7" class="atmos">Retro</text><text x="1400" y="427" class="atmos">Pluck</text><text x="1449.1" y="445.7" class="atmos">Drift</text><text x="1485.6" y="474.4" class="atmos">Bass</text><text x="1499" y="517" class="atmos">Reed</text><text x="1492.2" y="560" class="atmos">Chime</text><text x="1459.8" y="596" class="atmos">Hollow</text>
+  </g>
+  <g><circle class="knob" cx="1400" cy="845" r="61"/><path class="panel" d="M1400 808v35"/><text x="1400" y="955" class="knobname">LFO</text><rect class="secondarybox" x="1345.5" y="965" width="109" height="40"/><text x="1400" y="985" dominant-baseline="middle" class="secondary">TEMPO</text></g>
+
+  <!-- patch bays: outlined blocks preserve the left / central / right physical grouping -->
+  <g>
+    <rect class="bay" x="480" y="350" width="135" height="85" rx="5"/>
+    <rect class="bay" x="1010" y="350" width="135" height="85" rx="5"/>
+    <rect class="bay" x="480" y="500" width="135" height="85" rx="5"/><path class="baydivider" d="M482 542.5H613"/><text x="547" y="488" class="small" style="font-size:18.9px">ATMOS FREE</text><text x="547" y="609" class="small" style="font-size:18.9px">ATMOS STEP</text>
+    <rect class="bay" x="480" y="670" width="135" height="85" rx="5"/><path class="baydivider" d="M482 712.5H613"/><text x="547" y="658" class="small" style="font-size:18.9px">PRESENCE MOD</text><text x="547" y="779" class="small" style="font-size:18.9px">TENSION MOD</text>
+    <rect class="bay" x="730" y="635" width="135" height="75" rx="5"/><text x="797" y="734" class="small" style="font-size:18.9px">WANDER MOD</text>
+    <rect class="bay" x="1010" y="500" width="135" height="85" rx="5"/>
+    <rect class="bay" x="1010" y="660" width="135" height="85" rx="5"/><text x="1175" y="710" class="small">LFO</text>
+    <rect class="bay" x="650" y="840" width="135" height="80" rx="5"/><text x="717" y="806" class="small" style="font-size:18.9px">PATTERN</text><text x="682" y="828" class="micro">G</text><text x="717" y="828" class="micro">R</text><text x="752" y="828" class="micro">C</text><text x="717" y="945" class="small" style="font-size:18.9px">GATE</text>
+    <rect class="bay" x="816" y="840" width="135" height="80" rx="5"/><text x="883" y="828" class="small" style="font-size:18.9px">ENV</text><text x="883" y="945" class="small" style="font-size:18.9px">CV</text>
+    <!-- TRI and PULSE bracket the physical LFO patch bay. -->
+    <path class="fine" d="M1065 653l12-20 12 20"/><text x="1077" y="629" class="tech">TRI</text>
+    <path class="fine" d="M1053 770v-18h16v18h16v-18h16"/><text x="1077" y="786" class="tech">PULSE</text>
+  </g>
+  <!-- lower physical buttons -->
+  <circle class="knob" cx="515" cy="880" r="42"/><g transform="translate(445 946.6) scale(1.3)"><path d="M0 18V8L9.5 0L19 8V18H0" fill="none" stroke="#8A6414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g><text x="535" y="970" class="label" style="font-size:33.264px">HOME</text>
+  <circle class="knob" cx="1085" cy="880" r="42"/><text x="1085" y="970" class="label" style="font-size:33.264px">BACK/END</text>
+  <!-- HOME Preview position indicators: identical eight-tick arcs. -->
+  <g class="secondaryglyph" aria-label="Contour: eight discrete positions">
+    <path transform="translate(722 515) rotate(60)" d="M0 -5V5"/>
+    <path transform="translate(710 463) rotate(94.45)" d="M0 -5V5"/>
+    <path transform="translate(730 414) rotate(128.66)" d="M0 -5V5"/>
+    <path transform="translate(774 384) rotate(163.18)" d="M0 -5V5"/>
+    <path transform="translate(826 384) rotate(196.82)" d="M0 -5V5"/>
+    <path transform="translate(870 414) rotate(231.34)" d="M0 -5V5"/>
+    <path transform="translate(890 463) rotate(265.55)" d="M0 -5V5"/>
+    <path transform="translate(878 515) rotate(300)" d="M0 -5V5"/>
+  </g>
+  <g class="secondaryglyph" aria-label="Rhythm: eight discrete positions">
+    <path transform="translate(122 890) rotate(60)" d="M0 -5V5"/>
+    <path transform="translate(110 838) rotate(94.45)" d="M0 -5V5"/>
+    <path transform="translate(130 789) rotate(128.66)" d="M0 -5V5"/>
+    <path transform="translate(174 759) rotate(163.18)" d="M0 -5V5"/>
+    <path transform="translate(226 759) rotate(196.82)" d="M0 -5V5"/>
+    <path transform="translate(270 789) rotate(231.34)" d="M0 -5V5"/>
+    <path transform="translate(290 838) rotate(265.55)" d="M0 -5V5"/>
+    <path transform="translate(278 890) rotate(300)" d="M0 -5V5"/>
+  </g>
+</svg>
