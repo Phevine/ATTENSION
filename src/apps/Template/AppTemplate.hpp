@@ -72,7 +72,7 @@ public:
 
     uint8_t GetId()
     {
-        return Kastle2::kDefaultAppId;
+        return 0x4F;
     }
 
 private:
