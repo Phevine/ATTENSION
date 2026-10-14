@@ -11,10 +11,10 @@ finds different ways to leave, develop, and return.
 
 ## Have a Kastle 2 and want to try ATTENSION?
 
-Download [ATTENSION_1.0.uf2](ATTENSION_1.0.uf2), then:
+Download [ATTENSION_1.0.1.uf2](ATTENSION_1.0.1.uf2), or see the [latest release](https://github.com/Phevine/ATTENSION/releases/latest), then:
 
 1. Put your Kastle 2 into its RP2040 BOOTSEL USB mass-storage mode.
-2. Copy `ATTENSION_1.0.uf2` to the boot volume.
+2. Copy `ATTENSION_1.0.1.uf2` to the boot volume.
 3. Let the device reboot.
 4. Open the complete [ATTENSION_User_Manual_1.0.pdf](ATTENSION_User_Manual_1.0.pdf)
    to get started.
