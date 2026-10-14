@@ -2,7 +2,7 @@
 
 ATTENSION is community-developed firmware for the Bastl Instruments Kastle 2. It
 turns the instrument into a generative musical collaborator: one that moves
-between a recognisable HOME, variation, tension, and resolution rather than
+between a recognisable Home, variation, tension, and resolution rather than
 simply producing uncontrolled randomness.
 
 The idea is to let musical material evolve while staying connected to a
@@ -21,9 +21,9 @@ Download [ATTENSION_1.0.uf2](ATTENSION_1.0.uf2), then:
 
 ## What ATTENSION does
 
-ATTENSION begins at HOME: a musical identity shaped by its pitch range,
+ATTENSION begins at Home: a musical identity shaped by its pitch range,
 rhythm, and melodic contour. From there, Wander can carry the music further
-from HOME, while Tension shapes the drama of the journey—building expectation
+from Home, while Tension shapes the drama of the journey—building expectation
 before allowing it to resolve and find its way back.
 
 Voice A carries the primary line; Voice B can answer, support, or add a
@@ -34,9 +34,9 @@ surrounding world closer or pushes it further away.
 You guide the journey, shaping the movement, activity, voices, and atmosphere
 while ATTENSION generates musical possibilities along the way.
 
-## HOME Preview
+## Home Preview
 
-HOME Preview lets you audition and shape a prospective new HOME before you
+Home Preview lets you audition and shape a prospective new Home before you
 commit it. It is a way to listen to the next musical starting point rather
 than choosing blind. The [User Manual](ATTENSION_User_Manual_1.0.pdf)
 explains the complete workflow.
@@ -56,7 +56,7 @@ It covers controls, workflows, and the full instrument in detail.
 
 ## Faceplate
 
-The faceplate artwork is available in two intended forms:
+The faceplate artwork is available in two formats:
 
 - [ATTENSION_Kastle2_Faceplate.svg](docs/ATTENSION_Kastle2_Faceplate.svg) —
   editable vector artwork.
@@ -93,7 +93,7 @@ other contributors.
 ## Feedback
 
 Feedback, questions, bug reports, or found something interesting? I'd be
-glad to hear from you.
+happy to hear from you!
 
 Chris Beattie  
 chrisbeattie994 (at) gmail.com
